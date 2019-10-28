@@ -130,6 +130,81 @@
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
           "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.2"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "PRIMARY",
+          "groupIdentifier" : "673b2f08-5f7f-3408-bc6c-cde55be6e9eb",
+          "identifier" : "cc17d821-7dff-3fa5-b348-436cea36e811",
+          "name" : "ListDatabaseTables",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 570.0,
+            "y" : 53.0
+          },
+          "properties" : {
+            "list-db-refresh-interval" : "0 sec",
+            "list-db-include-count" : "false",
+            "list-db-tables-types" : "TABLE"
+          },
+          "propertyDescriptors" : {
+            "list-db-tables-db-connection" : {
+              "displayName" : "Database Connection Pooling Service",
+              "identifiesControllerService" : true,
+              "name" : "list-db-tables-db-connection",
+              "sensitive" : false
+            },
+            "list-db-refresh-interval" : {
+              "displayName" : "Refresh Interval",
+              "identifiesControllerService" : false,
+              "name" : "list-db-refresh-interval",
+              "sensitive" : false
+            },
+            "list-db-tables-catalog" : {
+              "displayName" : "Catalog",
+              "identifiesControllerService" : false,
+              "name" : "list-db-tables-catalog",
+              "sensitive" : false
+            },
+            "list-db-include-count" : {
+              "displayName" : "Include Count",
+              "identifiesControllerService" : false,
+              "name" : "list-db-include-count",
+              "sensitive" : false
+            },
+            "list-db-tables-name-pattern" : {
+              "displayName" : "Table Name Pattern",
+              "identifiesControllerService" : false,
+              "name" : "list-db-tables-name-pattern",
+              "sensitive" : false
+            },
+            "list-db-tables-schema-pattern" : {
+              "displayName" : "Schema Pattern",
+              "identifiesControllerService" : false,
+              "name" : "list-db-tables-schema-pattern",
+              "sensitive" : false
+            },
+            "list-db-tables-types" : {
+              "displayName" : "Table Types",
+              "identifiesControllerService" : false,
+              "name" : "list-db-tables-types",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.ListDatabaseTables",
+          "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
         "variables" : { }
